@@ -3,6 +3,7 @@
 body {
     background-color: brown;
 }
+
 .grid {
     display: grid;
     grid-template-columns: 10rem 10rem 10rem;
@@ -11,8 +12,13 @@ body {
     margin: 0;
     padding: 0;
 }
-.grid li {
+
+.grid .case {
     list-style: none;
     background-color: aliceblue;
+}
+
+.case-img {
+width: 100%;
 
 }
