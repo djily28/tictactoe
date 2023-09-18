@@ -3,15 +3,16 @@
 // console.log())
 
 const grid = document.querySelectorAll(".grid li");
-const cross = document.querySelector("#cross");
 
+let count = 0;
 grid.forEach((li) => {
   li.addEventListener("click", function () {
     if (this.childElementCount === 0) {
-      const displayCross = document.createElement("img");
-      displayCross.classList.add("case-img");
-      displayCross.src = "img/close.png";
-      this.appendChild(displayCross);
+		count++;
+		const displayImg = document.createElement("img");
+		displayImg.classList.add("case-img");
+		this.appendChild(displayImg);
+		displayImg.src = count % 2 == 0 ?  "img/close.png": "img/rec.png";	
     }
   });
 });
