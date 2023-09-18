@@ -3,3 +3,16 @@
 body {
     background-color: brown;
 }
+.grid {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-template-rows: 10rem 10rem 10rem;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+.grid li {
+    list-style: none;
+    background-color: aliceblue;
+
+}
